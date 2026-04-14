@@ -6,131 +6,128 @@
 
 @layer base {
   :root {
-    /* LIGHT MODE - MAROON SOFT */
-    --background: 0 30% 96%;
-    --foreground: 350 40% 15%;
+    /* LIGHT MODE - VINTAGE PHOTOBOX */
+    --background: 0 25% 95%;
+    --foreground: 350 35% 18%;
 
-    --card: 0 25% 100%;
-    --card-foreground: 350 40% 15%;
+    --card: 0 20% 100%;
+    --card-foreground: 350 35% 18%;
 
-    --popover: 0 25% 100%;
-    --popover-foreground: 350 40% 15%;
+    --popover: 0 20% 100%;
+    --popover-foreground: 350 35% 18%;
 
     --primary: 350 65% 35%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 350 30% 90%;
-    --secondary-foreground: 350 40% 20%;
+    --secondary: 350 20% 88%;
+    --secondary-foreground: 350 30% 25%;
 
-    --muted: 0 30% 94%;
-    --muted-foreground: 350 25% 55%;
+    --muted: 0 20% 92%;
+    --muted-foreground: 350 20% 55%;
 
-    --accent: 350 60% 55%;
+    --accent: 350 60% 50%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 70% 50%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 350 25% 85%;
-    --input: 350 25% 85%;
+    --border: 350 20% 80%;
+    --input: 350 20% 80%;
     --ring: 350 60% 45%;
 
     --radius: 0.75rem;
 
-    /* MAROON GRADIENTS */
+    /* 🎞️ VINTAGE GRADIENTS */
     --gradient-primary: linear-gradient(
       135deg,
-      hsl(350, 70%, 55%),
-      hsl(350, 70%, 30%)
+      hsl(350, 70%, 55%),   /* soft red */
+      hsl(350, 65%, 35%),   /* maroon */
+      hsl(0, 20%, 20%)      /* dark brown */
     );
 
     --gradient-hero: linear-gradient(
       180deg,
-      hsl(0 30% 96%) 0%,
-      hsl(350 40% 90%) 100%
+      hsl(0 25% 95%) 0%,
+      hsl(350 35% 85%) 40%,
+      hsl(350 25% 75%) 70%,
+      hsl(0 15% 65%) 100%
     );
 
     --navbg: linear-gradient(
       180deg,
-      hsl(350, 70%, 85%) 0%,
+      hsl(350, 60%, 80%) 0%,
+      hsl(350, 40%, 92%) 60%,
       hsl(0, 0%, 100%) 100%
     );
 
-    --shadow-glow: 0 0 40px hsla(350, 70%, 55%, 0.5);
-    --shadow-card: 0 4px 20px hsl(350 20% 20% / 0.08);
-    --shadow-card-hover: 0 8px 30px hsl(350 20% 20% / 0.12);
+    /* ✨ SHADOW VINTAGE GLOW */
+    --shadow-glow: 0 0 50px hsla(350, 70%, 50%, 0.35);
+    --shadow-card: 0 6px 25px hsl(0 20% 20% / 0.1);
+    --shadow-card-hover: 0 12px 40px hsl(0 20% 20% / 0.15);
 
-    --sidebar-background: 0 30% 96%;
+    --sidebar-background: 0 25% 95%;
     --sidebar-foreground: 350 30% 20%;
     --sidebar-primary: 350 65% 35%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 350 30% 90%;
-    --sidebar-accent-foreground: 350 40% 20%;
-    --sidebar-border: 350 25% 85%;
-    --sidebar-ring: 350 60% 45%;
+    --sidebar-accent: 350 20% 88%;
+    --sidebar-border: 350 20% 80%;
   }
 
   .dark {
-    /* DARK MODE - DEEP MAROON */
-    --background: 350 40% 8%;
+    /* 🌙 DARK MODE - CINEMATIC PHOTOBOX */
+    --background: 350 35% 7%;
     --foreground: 0 0% 95%;
 
-    --card: 350 40% 12%;
+    --card: 350 35% 12%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 350 40% 12%;
+    --popover: 350 35% 12%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 350 70% 55%;
+    --primary: 350 75% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 350 30% 18%;
+    --secondary: 350 25% 18%;
     --secondary-foreground: 0 0% 90%;
 
-    --muted: 350 35% 15%;
-    --muted-foreground: 350 20% 70%;
+    --muted: 350 25% 15%;
+    --muted-foreground: 350 15% 70%;
 
-    --accent: 350 60% 45%;
+    --accent: 350 65% 50%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 70% 50%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 350 30% 20%;
-    --input: 350 30% 20%;
+    --border: 350 25% 20%;
+    --input: 350 25% 20%;
     --ring: 350 70% 55%;
 
-    /* DARK MAROON GRADIENT */
+    /* 🎞️ DARK VINTAGE DEPTH */
     --gradient-primary: linear-gradient(
       135deg,
       hsl(350, 80%, 60%),
-      hsl(350, 80%, 30%)
+      hsl(350, 70%, 40%),
+      hsl(0, 0%, 5%)   /* almost black */
     );
 
     --gradient-hero: linear-gradient(
       180deg,
-      hsl(350 40% 8%) 0%,
-      hsl(350 45% 12%) 100%
+      hsl(350 35% 7%) 0%,
+      hsl(350 40% 12%) 40%,
+      hsl(0 0% 10%) 80%,
+      hsl(0 0% 5%) 100%
     );
 
     --navbg: linear-gradient(
       180deg,
-      hsl(350, 60%, 25%) 0%,
-      hsl(350, 40%, 10%) 100%
+      hsl(350, 50%, 25%) 0%,
+      hsl(350, 35%, 12%) 100%
     );
 
-    --shadow-glow: 0 0 60px hsla(350, 80%, 60%, 0.4);
-    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.4);
-    --shadow-card-hover: 0 8px 30px hsl(350 70% 50% / 0.2);
+    /* 🌌 GLOW CINEMATIC */
+    --shadow-glow: 0 0 70px hsla(350, 80%, 60%, 0.25);
+    --shadow-card: 0 8px 30px hsl(0 0% 0% / 0.5);
+    --shadow-card-hover: 0 15px 50px hsl(350 70% 50% / 0.25);
 
-    --sidebar-background: 350 40% 10%;
+    --sidebar-background: 350 35% 10%;
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 350 70% 55%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 350 30% 18%;
-    --sidebar-accent-foreground: 0 0% 90%;
-    --sidebar-border: 350 30% 20%;
-    --sidebar-ring: 350 70% 55%;
+    --sidebar-primary: 350 75% 60%;
+    --sidebar-accent: 350 25% 18%;
+    --sidebar-border: 350 25% 20%;
   }
 }
 
@@ -181,6 +178,20 @@
 
   .glass-strong {
     @apply bg-card/95 backdrop-blur-xl border border-border;
+  }
+
+  /* 🎞️ OPTIONAL: VINTAGE GRAIN EFFECT */
+  .grain {
+    position: relative;
+  }
+
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+    opacity: 0.08;
+    pointer-events: none;
   }
 }
 
