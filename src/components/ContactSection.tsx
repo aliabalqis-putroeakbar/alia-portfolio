@@ -19,19 +19,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@developer.com',
-    href: 'mailto:hello@developer.com',
+    value: 'aliabalqisputroeakbar@gmail.com',
+    href: 'mailto:aliabalqisputroeakbar@gmail.com',
   },
   {
     icon: Phone,
     label: 'Telepon',
-    value: '+62 812 3456 7890',
-    href: 'tel:+6281234567890',
+    value: '+62 813 6077 4292',
+    href: 'tel:+6281360774292',
   },
   {
     icon: MapPin,
     label: 'Lokasi',
-    value: 'Jakarta, Indonesia',
+    value: 'Banda Aceh, Indonesia',
     href: '#',
   },
 ];
@@ -81,16 +81,16 @@ export default function ContactSection() {
       if (error) throw error;
 
       toast({
-        title: 'Pesan Terkirim! ✨',
-        description: 'Terima kasih telah menghubungi saya. Saya akan membalas secepatnya.',
+        title: 'Message Sent ✨',
+        description: 'Thank you for reaching out. I’ll get back to you soon 🤍',
       });
 
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error: unknown) {
       console.error('Error sending email:', error);
       toast({
-        title: 'Gagal Mengirim',
-        description: 'Terjadi kesalahan. Silakan coba lagi atau hubungi langsung via email.',
+        title: 'Oops, something went wrong',
+        description: 'Please try again or contact me directly via email.',
         variant: 'destructive',
       });
     } finally {
@@ -108,9 +108,9 @@ export default function ContactSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-medium mb-2 block">Kontak</span>
+          <span className="text-primary font-medium mb-2 block">Contact</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-            Hubungi Saya
+            Let’s Connect
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
@@ -126,12 +126,13 @@ export default function ContactSection() {
           >
             <div>
               <h3 className="font-display text-2xl font-bold mb-4">
-                Mari Berkolaborasi!
+                Let’s create something together ✨
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Punya project menarik atau ingin berkolaborasi? Jangan ragu untuk 
-                menghubungi saya. Saya selalu terbuka untuk diskusi tentang project 
-                baru, ide kreatif, atau kesempatan untuk menjadi bagian dari visi Anda.
+                If you have something in mind — whether it’s a project, a creative idea, 
+                or just a simple conversation — I’d love to hear about it.  
+                I enjoy connecting with people, sharing ideas, and growing through 
+                meaningful collaborations and experiences 🤍
               </p>
             </div>
 
@@ -169,14 +170,14 @@ export default function ContactSection() {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium">
-                    Nama
+                    Your Name
                   </label>
                   <Input
                     id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Nama Anda"
+                    placeholder="Your name..."
                     className={errors.name ? 'border-destructive' : ''}
                   />
                   {errors.name && (
@@ -185,7 +186,7 @@ export default function ContactSection() {
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium">
-                    Email
+                    Your Email
                   </label>
                   <Input
                     id="email"
@@ -193,7 +194,7 @@ export default function ContactSection() {
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="email@example.com"
+                    placeholder="your@email.com"
                     className={errors.email ? 'border-destructive' : ''}
                   />
                   {errors.email && (
@@ -204,14 +205,14 @@ export default function ContactSection() {
 
               <div className="space-y-2">
                 <label htmlFor="subject" className="text-sm font-medium">
-                  Subjek
+                  Subject
                 </label>
                 <Input
                   id="subject"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  placeholder="Subjek pesan"
+                  placeholder="What would you like to talk about?"
                   className={errors.subject ? 'border-destructive' : ''}
                 />
                 {errors.subject && (
@@ -221,14 +222,14 @@ export default function ContactSection() {
 
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium">
-                  Pesan
+                  Message
                 </label>
                 <Textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tuliskan pesan Anda..."
+                  placeholder="Write your message here..."
                   rows={5}
                   className={errors.message ? 'border-destructive' : ''}
                 />
@@ -246,12 +247,12 @@ export default function ContactSection() {
                 {isSubmitting ? (
                   <>
                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
-                    Mengirim...
+                    Sending...
                   </>
                 ) : (
                   <>
                     <Send className="h-4 w-4 mr-2" />
-                    Kirim Pesan
+                    Send Message
                   </>
                 )}
               </Button>
