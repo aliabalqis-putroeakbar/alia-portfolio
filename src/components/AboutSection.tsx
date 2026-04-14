@@ -55,7 +55,7 @@ export default function AboutSection() {
 
               {/* FOTO */}
               <motion.img
-                src="/foto akun1.jpg"
+                src="/alia02.jpg" // ganti dengan foto kamu
                 alt="photo"
                 initial={{ y: 200, rotate: -10, opacity: 0 }}
                 whileInView={{ y: -20, rotate: -2, opacity: 1 }}
