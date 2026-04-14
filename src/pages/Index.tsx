@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
+import Song from '@/components/Song'; // ✅ IMPORT
 import SkillsSection from '@/components/SkillsSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import CertificatesSection from '@/components/CertificatesSection';
@@ -34,6 +35,7 @@ const Index = () => {
       <Navbar isDark={isDark} toggleTheme={toggleTheme} />
       <HeroSection />
       <AboutSection />
+      <Song /> {/* ✅ FIXED */}
       <SkillsSection />
       <ProjectsSection />
       <CertificatesSection />

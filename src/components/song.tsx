@@ -41,7 +41,7 @@ const artists = [
   },
 ];
 
-export default function MusicSection() {
+export default function Song() {
   const [[page, direction], setPage] = useState([0, 0]);
   const [active, setActive] = useState<number | null>(null);
 
@@ -52,12 +52,12 @@ export default function MusicSection() {
   };
 
   return (
-    <section className="py-20 bg-black text-white">
+    <section id="song" className="py-20 bg-black text-white">
       <div className="max-w-4xl mx-auto px-4">
 
         {/* HEADER */}
         <h2 className="text-3xl md:text-5xl font-bold mb-10 text-center">
-          My Playlist 🎧
+          Songs 🎧
         </h2>
 
         {/* CAROUSEL */}
