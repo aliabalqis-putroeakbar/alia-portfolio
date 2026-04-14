@@ -4,55 +4,55 @@ import { Button } from '@/components/ui/button';
 
 const certificates = [
   {
-    title: 'Traveling & Exploring New Places',
-    issuer: 'One of my favorite things to do',
+    title: 'Exploring & Discovering New Places',
+    issuer: 'A part of who I am',
     date: 'Ongoing',
-    credentialId: 'I really enjoy discovering new places and experiences',
+    credentialId: 'I genuinely enjoy exploring new places and collecting meaningful experiences along the way',
     image: '✈️',
     color: 'from-rose-400/20 to-red-500/20',
     link: '#',
   },
   {
-    title: 'Baking & Recipe Development',
-    issuer: 'My way to relax',
+    title: 'Baking & Creative Experiments',
+    issuer: 'My comfort space',
     date: 'Ongoing',
-    credentialId: 'I love experimenting with cupcakes, brownies, and cookies',
+    credentialId: 'Baking helps me slow down and express creativity through cupcakes, brownies, and cookies',
     image: '🧁',
     color: 'from-yellow-400/20 to-orange-400/20',
     link: '#',
   },
   {
-    title: 'Music & Daily Listening',
-    issuer: 'A big part of my daily life',
+    title: 'Music as My Everyday Companion',
+    issuer: 'A daily habit',
     date: '24/7',
-    credentialId: 'Music is always playing whenever I’m by myself',
+    credentialId: 'Music is always there for me — it keeps me inspired, relaxed, and connected to my emotions',
     image: '🎧',
     color: 'from-purple-400/20 to-pink-500/20',
     link: '#',
   },
   {
-    title: 'Playlist Curation',
-    issuer: 'My personal music taste',
+    title: 'Curating My Own Sound & Taste',
+    issuer: 'Personal playlist journey',
     date: 'Always',
-    credentialId: 'I enjoy listening to Frank Ocean, Sheila on 7, Daniel Caesar, and Dewa 19',
+    credentialId: 'I enjoy discovering and curating music from artists like Frank Ocean, Sheila on 7, Daniel Caesar, and Dewa 19',
     image: '🎶',
     color: 'from-indigo-400/20 to-blue-500/20',
     link: '#',
   },
   {
-    title: 'Mini Trips & Memories',
-    issuer: 'Places I’ve been to',
+    title: 'Moments from My Mini Trips',
+    issuer: 'Places & memories',
     date: 'Recent years',
-    credentialId: 'I’ve explored places like Sabang, Meulaboh, Medan, and Jakarta',
+    credentialId: 'I’ve created memories in places like Sabang, Meulaboh, Medan, and Jakarta — each trip shaped my perspective',
     image: '🌍',
     color: 'from-pink-400/20 to-rose-500/20',
     link: '#',
   },
   {
-    title: 'Creative Growth & Exploration',
-    issuer: 'How I see myself',
+    title: 'Growing Through Experiences',
+    issuer: 'My personal journey',
     date: 'Ongoing',
-    credentialId: 'I love trying new things, meeting people, and growing through experiences',
+    credentialId: 'I love trying new things, meeting people, and growing through every small experience life offers',
     image: '✨',
     color: 'from-purple-400/20 to-pink-400/20',
     link: '#',
@@ -72,16 +72,17 @@ export default function CertificatesSection() {
         >
           <span className="text-primary font-medium mb-2 block">About Me</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-            Alia’s World & Interests
+            Alia’s Story & Journey
           </h2>
 
           <p className="max-w-2xl mx-auto text-muted-foreground leading-relaxed mt-4">
             I’m <span className="font-semibold text-foreground">Alia Balqis Putroe Akbar</span> — Alia for short.  
-            I’m 16, and I’m an extrovert with people I know well. I love exploring new places, 
-            baking to unwind, and I basically have music on 24/7 when I’m by myself.  
+            I’m 16, and I tend to be more expressive and outgoing with people I feel comfortable with.  
             <br /><br />
-            I bring that same curiosity and energy into everything I do. I’m always excited 
-            to create, collaborate, and grow through new experiences and little moments in life ✨
+            I enjoy exploring new places, baking as a way to unwind, and having music play almost all the time when I’m by myself.  
+            Those little things shape how I see the world — full of curiosity, warmth, and small meaningful moments.  
+            <br /><br />
+            I bring that same energy into everything I do. I love creating, connecting with people, and growing through new experiences ✨
           </p>
 
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-6" />
