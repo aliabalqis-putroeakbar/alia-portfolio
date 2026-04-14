@@ -1,26 +1,27 @@
 import { motion } from 'framer-motion';
 
 const skills = {
-  frontend: [
-    { name: 'Vue.js', level: 100 },
-    { name: 'React', level: 95 },
-    { name: 'TypeScript', level: 90 },
-    { name: 'swift', level: 88 },
-    { name: 'Tailwind CSS', level: 95 },
+  hobbies: [
+    { name: 'Traveling', level: 85 },
+    { name: 'Baking', level: 50 },
+    { name: 'Music', level: 100 },
   ],
-  backend: [
-    { name: 'Node.js', level: 90 },
-    { name: 'Python', level: 98 },
-    { name: 'PostgreSQL', level: 88 },
-    { name: 'MongoDB', level: 90 },
-    { name: 'MySql', level: 92 },
+  playlist: [
+    { name: 'Frank Ocean', level: 85 },
+    { name: 'Sheila on 7', level: 90 },
+    { name: 'Daniel Caesar', level: 95 },
+    { name: 'Dewa 19', level: 100 },
   ],
-  DevOps: [
-    { name: 'Git', level: 95 },
-    { name: 'Docker', level: 80 },
-    { name: 'AWS', level: 75 },
-    // { name: 'Figma', level: 85 },
-    { name: 'CI/CD', level: 82 },
+  baking: [
+    { name: 'Cupcake', level: 67 },
+    { name: 'Brownies', level: 95 },
+    { name: 'Cookies', level: 100 },
+  ],
+  trips: [
+    { name: 'Sabang', level: 95 },
+    { name: 'Meulaboh', level: 50 },
+    { name: 'Medan', level: 80 },
+    { name: 'Jakarta', level: 90 },
   ],
 };
 
@@ -63,13 +64,13 @@ export default function SkillsSection() {
         >
           <span className="text-primary font-medium mb-2 block">Keahlian</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-            Hard Skills
+            My Interests & Skills
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {/* Frontend */}
+          {/* Hobbies */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -79,18 +80,18 @@ export default function SkillsSection() {
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="p-3 rounded-xl bg-primary/10">
-                <span className="text-2xl">🎨</span>
+                <span className="text-2xl">🎯</span>
               </div>
-              <h3 className="font-display text-xl font-bold">Frontend</h3>
+              <h3 className="font-display text-xl font-bold">Hobbies</h3>
             </div>
             <div className="space-y-4">
-              {skills.frontend.map((skill, index) => (
+              {skills.hobbies.map((skill, index) => (
                 <SkillBar key={skill.name} {...skill} delay={index * 0.1} />
               ))}
             </div>
           </motion.div>
 
-          {/* Backend */}
+          {/* Playlist */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -100,18 +101,18 @@ export default function SkillsSection() {
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="p-3 rounded-xl bg-primary/10">
-                <span className="text-2xl">⚙️</span>
+                <span className="text-2xl">🎧</span>
               </div>
-              <h3 className="font-display text-xl font-bold">Backend</h3>
+              <h3 className="font-display text-xl font-bold">Playlist Curation</h3>
             </div>
             <div className="space-y-4">
-              {skills.backend.map((skill, index) => (
+              {skills.playlist.map((skill, index) => (
                 <SkillBar key={skill.name} {...skill} delay={index * 0.1} />
               ))}
             </div>
           </motion.div>
 
-          {/* DevOps */}
+          {/* Baking */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -121,12 +122,33 @@ export default function SkillsSection() {
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="p-3 rounded-xl bg-primary/10">
-                <span className="text-2xl">🛠️</span>
+                <span className="text-2xl">🧁</span>
               </div>
-              <h3 className="font-display text-xl font-bold">DevOps</h3>
+              <h3 className="font-display text-xl font-bold">Baking & Recipe</h3>
             </div>
             <div className="space-y-4">
-              {skills.DevOps.map((skill, index) => (
+              {skills.baking.map((skill, index) => (
+                <SkillBar key={skill.name} {...skill} delay={index * 0.1} />
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Trips */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="p-6 glass rounded-2xl shadow-card hover:shadow-card-hover transition-shadow md:col-span-3"
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <span className="text-2xl">✈️</span>
+              </div>
+              <h3 className="font-display text-xl font-bold">Mini Trips</h3>
+            </div>
+            <div className="space-y-4">
+              {skills.trips.map((skill, index) => (
                 <SkillBar key={skill.name} {...skill} delay={index * 0.1} />
               ))}
             </div>
