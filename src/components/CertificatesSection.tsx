@@ -72,19 +72,10 @@ export default function CertificatesSection() {
         >
           <span className="text-primary font-medium mb-2 block">About Me</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-            Alia’s Story & Journey
+            certificates
           </h2>
 
-          <p className="max-w-2xl mx-auto text-muted-foreground leading-relaxed mt-4">
-            I’m <span className="font-semibold text-foreground">Alia Balqis Putroe Akbar</span> — Alia for short.  
-            I’m 16, and I tend to be more expressive and outgoing with people I feel comfortable with.  
-            <br /><br />
-            I enjoy exploring new places, baking as a way to unwind, and having music play almost all the time when I’m by myself.  
-            Those little things shape how I see the world — full of curiosity, warmth, and small meaningful moments.  
-            <br /><br />
-            I bring that same energy into everything I do. I love creating, connecting with people, and growing through new experiences ✨
-          </p>
-
+          
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-6" />
         </motion.div>
 
