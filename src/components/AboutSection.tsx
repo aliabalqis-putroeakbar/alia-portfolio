@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Code2, Video, Coffee, Rocket, ChevronDown } from 'lucide-react';
+import { Code2, Video, ChevronDown } from 'lucide-react';
 
 export default function AboutSection() {
   const [activeAccordion, setActiveAccordion] = useState(0);
@@ -24,7 +24,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-20 md:py-32 overflow-hidden bg-gradient-to-b from-[#3b0d0d] via-[#5a1a1a] to-[#2b0a0a] text-white">
+    <section id="about" className="py-20 md:py-32 overflow-hidden bg-gradient-hero">
       <div className="container mx-auto px-4">
 
         {/* Header */}
@@ -33,13 +33,13 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <span className="text-[#ffb3b3] font-medium mb-2 block uppercase tracking-widest text-sm">
+          <span className="text-primary font-medium mb-2 block uppercase tracking-widest text-sm">
             Tentang Saya
           </span>
-          <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
+          <h2 className="font-display text-3xl md:text-5xl font-bold mb-4 text-foreground">
             A Little Story of Me
           </h2>
-          <div className="w-20 h-1 bg-[#ff4d4d] mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -47,13 +47,13 @@ export default function AboutSection() {
           {/* FOTO + PHOTOBOX */}
           <div className="relative flex justify-center">
 
-            {/* SLOT (TEMPAT KELUAR FOTO) */}
-            <div className="absolute top-0 w-40 h-6 bg-[#2b0a0a] rounded-full shadow-inner z-10 border border-[#ff4d4d]/20" />
+            {/* SLOT */}
+            <div className="absolute top-0 w-40 h-6 bg-card rounded-full shadow-inner z-10 border border-border" />
 
             {/* BODY PHOTOBOX */}
-            <div className="w-64 h-80 bg-[#4a1414] rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.6)] border border-[#ff4d4d]/20 flex items-end justify-center relative overflow-hidden">
+            <div className="w-64 h-80 bg-card rounded-3xl shadow-card border border-border flex items-end justify-center relative overflow-hidden">
 
-              {/* FOTO KELUAR */}
+              {/* FOTO */}
               <motion.img
                 src="/foto akun1.jpg"
                 alt="photo"
@@ -65,15 +65,15 @@ export default function AboutSection() {
                   damping: 12,
                   delay: 0.3
                 }}
-                className="w-52 h-64 object-cover rounded-xl shadow-2xl border-4 border-white"
+                className="w-52 h-64 object-cover rounded-xl shadow-2xl border-4 border-background"
               />
 
               {/* GLOW */}
-              <div className="absolute inset-0 bg-[#ff4d4d]/10 blur-2xl opacity-30" />
+              <div className="absolute inset-0 bg-primary/10 blur-2xl opacity-30" />
             </div>
 
-            {/* SHADOW DEPTH */}
-            <div className="absolute bottom-0 w-40 h-10 bg-black/40 blur-xl rounded-full" />
+            {/* SHADOW */}
+            <div className="absolute bottom-0 w-40 h-10 bg-black/30 blur-xl rounded-full" />
           </div>
 
           {/* TEXT */}
@@ -82,13 +82,13 @@ export default function AboutSection() {
               {accordionData.map((item, index) => (
                 <motion.div 
                   key={index}
-                  className="border border-[#ff4d4d]/20 rounded-xl overflow-hidden bg-[#3b0d0d]/60"
+                  className="border border-border rounded-xl overflow-hidden bg-card/60 backdrop-blur"
                 >
                   <button
                     onClick={() => setActiveAccordion(activeAccordion === index ? -1 : index)}
-                    className="w-full p-4 flex items-center justify-between text-left hover:bg-[#ff4d4d]/10"
+                    className="w-full p-4 flex items-center justify-between text-left hover:bg-primary/5 transition-colors"
                   >
-                    <span className="font-display font-bold text-lg text-[#ffd6d6]">
+                    <span className="font-display font-bold text-lg text-foreground">
                       {item.title}
                     </span>
                     <ChevronDown 
@@ -103,13 +103,13 @@ export default function AboutSection() {
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                       >
-                        <div className="p-4 pt-0 text-[#ffcccc]">
+                        <div className="p-4 pt-0 text-muted-foreground">
                           {item.content}
                         </div>
-                        <div className="p-4 pt-0 text-[#ffcccc]">
+                        <div className="p-4 pt-0 text-muted-foreground">
                           {item.content2}
                         </div>
-                        <div className="p-4 pt-0 text-[#ffcccc]">
+                        <div className="p-4 pt-0 text-muted-foreground">
                           {item.content3}
                         </div>
                       </motion.div>
@@ -126,11 +126,11 @@ export default function AboutSection() {
                   key={stat.label}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  className="p-4 rounded-xl text-center bg-[#4a1414] border border-[#ff4d4d]/20"
+                  className="p-4 rounded-xl text-center bg-card border border-border shadow-sm"
                 >
-                  <stat.icon className="h-6 w-6 text-[#ff8080] mx-auto mb-2" />
-                  <p className="font-display text-2xl font-bold">{stat.value}</p>
-                  <p className="text-xs text-[#ffcccc]">{stat.label}</p>
+                  <stat.icon className="h-6 w-6 text-primary mx-auto mb-2" />
+                  <p className="font-display text-2xl font-bold text-foreground">{stat.value}</p>
+                  <p className="text-xs text-muted-foreground">{stat.label}</p>
                 </motion.div>
               ))}
             </div>
