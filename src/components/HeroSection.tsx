@@ -16,12 +16,6 @@ export default function HeroSection() {
       href: "https://github.com/naufal-angkasah",
       label: "GitHub",
     },
-    {
-      icon: Linkedin,
-      href: "https://www.linkedin.com/in/naufal-angkasah/",
-      label: "LinkedIn",
-    },
-    { icon: Youtube, href: "https://youtube.com/", label: "YouTube" },
     { icon: Instagram, href: "https://instagram.com/", label: "Instagram" },
   ];
   return (
@@ -55,7 +49,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
             >
-              <span className="text-gradient">Naufal Portfolio</span>
+              <span className="text-gradient">Alia balqis putroe akbar</span>
             </motion.h1>
 
             <motion.p
@@ -64,8 +58,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-xl text-muted-foreground mb-8"
             >
-              Saya membangun aplikasi web yang indah dan fungsional, serta
-              membagikan pengetahuan melalui konten yang inspiratif.
+              I’m an extrovert with people I know well, and I enjoy building genuine connections through shared experiences. I love exploring new places, baking to unwind, and having music on almost 24/7 when I’m by myself. That same curiosity and energy shape the way I approach everything I do — I’m always excited to create, collaborate, and grow through new projects and meaningful experiences.
             </motion.p>
 
             <motion.div
