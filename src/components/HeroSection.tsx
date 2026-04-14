@@ -13,10 +13,10 @@ export default function HeroSection() {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/naufal-angkasah",
+      href: "https://github.com/aliabalqis-putroeakbar",
       label: "GitHub",
     },
-    { icon: Instagram, href: "https://instagram.com/", label: "Instagram" },
+    { icon: Instagram, href: "https://instagram.com/aallblqis_", label: "Instagram" },
   ];
   return (
     <section
@@ -49,7 +49,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
             >
-              <span className="text-gradient">Alia balqis putroe akbar</span>
+              <span className="text-gradient">Alia balqis</span>
             </motion.h1>
 
             <motion.p
